@@ -1,0 +1,244 @@
+<!doctype html>
+
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>impress.js | presentation tool based on the power of CSS3 transforms and transitions in modern browsers | by Bartek Szopka @bartaz</title>
+    
+    <meta name="description" content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com." />
+    <meta name="author" content="Bartek Szopka" />
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+
+
+    <link href="css/impress-demo.css" rel="stylesheet" />
+    
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <style>
+
+    .dataintable{ font-size: 18px;}
+        .dataintable th{ vertical-align:baseline;
+                    padding:5px 15px 5px 6px;
+                    background-color:#d5d5d5;
+                    border:1px solid #aaa;}
+                  .dataintable td    {
+                        vertical-align:text-top;
+                        padding:6px 15px 6px 6px;
+                        background-color:#efefef;
+                        border:1px solid #aaa;
+                        line-height: 25pt;
+                    }
+    }
+     
+    </style>
+</head>
+
+
+<body class="impress-not-supported">
+
+
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+
+
+<div id="impress">
+
+<!--------1------>
+
+    <div id="bored"  class="step slide" data-x="-1000" data-y="-1500">
+     
+        <div style="font-size: 30px; line-height: 42pt;">
+            <strong>CSS 动画</strong><br><br>
+            Transitions (过渡)<br>
+            Transforms (变换)<br>
+            Animations（动画）<br>
+            Examples (一些小例子)<br>
+        </div>
+    </div>
+
+
+    <div class="step slide" data-x="0" data-y="-1500" data-rotate=90>
+        
+        <div style="font-size: 30px; line-height: 33pt">
+            <strong>CSS3 transition </strong><br><br>
+            <span style="font-size:20px;"><strong>过渡 : </strong>元素从一种样式变换为另一种样式的方式</span><br>
+
+            <table class="dataintable" style=" border-collapse:collapse; border:1px solid #aaa ">
+            <tbody><tr>
+            <th style="width:30%;">属性</th>
+            <th>描述</th>
+            <th style="width:5%;">CSS</th>
+            </tr>
+
+            <tr>
+            <td><a href="javascript:;" title="CSS3 transition 属性">transition</a></td>
+            <td>简写属性，用于在一个属性中设置四个过渡属性。</td>
+            <td>3</td>
+            </tr>
+
+            <tr>
+            <td><a href="javascript:;" title="CSS3 transition-property 属性">transition-property</a></td>
+            <td>规定应用过渡的 CSS 属性的名称。</td>
+            <td>3</td>
+            </tr>
+
+            <tr>
+            <td><a href="javascript:;" title="CSS3 transition-duration 属性">transition-duration</a></td>
+            <td>定义过渡效果花费的时间。默认是 0。</td>
+            <td>3</td>
+            </tr>
+
+            <tr>
+            <td><a href="javascript:;" title="CSS3 transition-timing-function 属性">transition-timing-function</a></td>
+            <td>规定过渡效果的时间曲线。默认是 "ease"。<sapn style="font-size: 18px;">(linear,ease-in,ease-out,ease-in-out,cubic-bezier(n,n,n,n))</sapn></td>
+            <td>3</td>
+            </tr>
+
+            <tr>
+            <td><a href="javascript:;" title="CSS3 transition-delay 属性">transition-delay</a></td>
+            <td>规定过渡效果何时开始。默认是 0。</td>
+            <td>3</td>
+            </tr>
+            </tbody></table>
+            <p style="font-size: 20px;"><strong>浏览器支持 : </strong>Internet Explorer 10、Firefox、Chrome 以及 Opera 支持 transition 属性。<p>
+            <div style="font-size:13px; line-height: 22px; ">
+                transition-property: width;<br>
+                transition-duration: 1s;<br>
+                transition-timing-function: linear;<br>
+                transition-delay: 2s;<br>
+            </div>
+        </div>    
+    </div>
+
+
+    <div  class="step slide slide2" data-x="1000" data-y="-1500">
+        <div style="font-size: 30px; line-height: 33pt">
+            <style type="text/css">
+            .slide2 p { line-height:30px; margin-bottom: 20px; }
+                .slide2 p span{ font-size:18px;}
+            }
+            </style>
+            <strong>CSS3 transform  </strong><br><br>
+            <p>
+            translate()<br><br>
+            <span>通过 translate() 方法，元素从其当前位置移动，根据给定的 left（x 坐标） 和 top（y 坐标） 位置参数</span><br>
+            <span>方法：transform: translate(50px,100px);</span>
+            </p>
+            <p>
+            rotate()<br><br>
+             <span>通过 rotate() 方法，元素顺时针旋转给定的角度。允许负值，元素将逆时针旋转。</span>
+             <span>方法：transform: rotate(30deg);</span>
+            </p>
+            <p>
+            scale() <br><br>
+             <span>通过 scale() 方法，元素的尺寸会增加或减少，根据给定的宽度（X 轴）和高度（Y 轴）参数</span>
+             <span>方法：transform: scale(2,4);</span>
+            </p>
+            <p>
+            skew()
+             <span>通过 skew() 方法，元素翻转给定的角度，根据给定的水平线（X 轴）和垂直线（Y 轴）参数</span>
+            </p>
+        </div>
+
+    </div>
+
+    <div  class="step slide slide2" data-x="2000" data-y="-1500">
+        <div style="font-size: 30px; line-height: 33pt">
+            <style type="text/css">
+            .slide2 p { line-height:30px; margin-bottom: 20px; }
+                .slide2 p span{ font-size:18px;}
+            }
+            </style>
+            <strong>CSS3 动画  </strong><br>
+            <p>
+            @keyframes 规则<br><br>
+            <span>@keyframes mymove</span>
+            <span>{</span>
+            <span>from {top:0px;}</span>
+            <span> to {top:200px;}</span>
+            <span>}</span>
+            <br>
+            <span>@keyframes mymove</span>
+            <span>{</span>
+           
+            <span>0%   {top:0px;}
+            25%  {top:200px;}
+            50%  {top:100px;}
+            75%  {top:200px;}
+            100% {top:0px;}
+            </span>
+
+            <span>}</span>
+            </p>
+            <p>
+            ainimation<br>
+            <table class="dataintable" width="100%;" style=" font-size: 18px; line-height: 20px">
+            <tbody><tr>
+            <th style="width:50%;">值</th>
+            <th>描述</th>
+            </tr>
+
+            <tr>
+            <td><i><a href="javascript:;" title="CSS3 animation-name 属性">animation-name</a></i></td>
+            <td>规定需要绑定到选择器的 keyframe 名称。。</td>
+            </tr>
+
+            <tr>
+            <td><i><a href="javascript:;" title="CSS3 animation-duration 属性">animation-duration</a></i></td>
+            <td>规定完成动画所花费的时间，以秒或毫秒计。</td>
+            </tr>
+
+            <tr>
+            <td><i><a href="javascript:;" title="CSS3 animation-timing-function 属性">animation-timing-function</a></i></td>
+            <td>规定动画的速度曲线。</td>
+            </tr>
+
+            <tr>
+            <td><i><a href="javascript:;" title="CSS3 animation-delay 属性">animation-delay</a></i></td>
+            <td>规定在动画开始之前的延迟。</td>
+            </tr>
+
+            <tr>
+            <td><i><a href="javascript:;" title="CSS3 animation-iteration-count 属性">animation-iteration-count</a></i></td>
+            <td>规定动画应该播放的次数。</td>
+            </tr>
+
+            <tr>
+            <td><i><a href="javascript:;" title="CSS3 animation-direction 属性">animation-direction</a></i></td>
+            <td>规定是否应该轮流反向播放动画。</td>
+            </tr>
+            </tbody></table>
+             
+            </p>
+        </div>
+
+    </div>
+
+
+
+
+</div>
+
+
+<div class="hint">
+    <p>GO-></p>
+</div>
+<script>
+if ("ontouchstart" in document.documentElement) { 
+    document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+}
+</script>
+
+<script src="js/impress.js"></script>
+<script>impress().init();</script>
+
+
+
+</body>
+</html>
